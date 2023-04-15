@@ -7,7 +7,7 @@
   
   Dobbiamo immaginare di programmare con un linguaggio privo delle facility date dagli oggetti String come ad esempio il linguaggio **C**.
   
-  **NON  SI POSSONO ** quindi utilizzare le seguenti classi/metodi di **manipolazione delle stringhe** tipiche dei linguaggi C#,C++,Pyton.
+  **NON  SI POSSONO** quindi utilizzare le seguenti classi/metodi di **manipolazione delle stringhe** tipiche dei linguaggi C#,C++,Pyton.
   
   Esempi:
   
@@ -29,7 +29,7 @@
  
  *   il pensiero computazionale, gli algoritmi di ordinamento
  
-# **  Cosa si ottiene da questo programma:**
+# **Cosa si ottiene da questo programma:**
 
 * Versione **maiuscola** delle stringhe
 
