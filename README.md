@@ -81,7 +81,7 @@ int Lunghezza(string s)
     }
 ``` 
 
-> Questo metodo è utilizzato per sostituire  il "**ToUpper()**", utilizzato per convertire le stringhe in maiuscolo.
+> Questo metodo è utilizzato per sostituire  il "**ToUpper()**", utilizzato per convertire le stringhe in maiuscolo (Esempio: 'ciao' ---> 'CIAO').
 
 ``` 
 string Minuscolo(string s)
@@ -100,7 +100,7 @@ string Minuscolo(string s)
     }
 ``` 
 
-> Questo metodo è utilizzato per sostituire il "**ToLower()**", utilizzato per convertire le stringhe in minuscolo.
+> Questo metodo è utilizzato per sostituire il "**ToLower()**", utilizzato per convertire le stringhe in minuscolo (Esempio: 'cIaO' ---> 'ciao').
 
 ``` 
 int lettere(string s)
@@ -115,12 +115,73 @@ int lettere(string s)
 
         return retVal;
 ``` 
-> Questo metodo è utilizzato per sostituire il
+> Questo metodo è utilizzato per vedere da **quante lettere** è formata la stringa.
+
+```
+string reverse(string s)
+    {
+        char[] caratteri = s.ToCharArray();
+        char[] reverse = new char[Lunghezza(caratteri)];
 
 
+        for (int i = 0; i < Lunghezza(s); i++)
+        {
+            reverse[i] = (char)caratteri[Lunghezza(caratteri) - i - 1];
+        }
 
+        return new string(reverse);
+    }
+``` 
+> Questo metodo è utilizzato per **rovesciare** la stringa (Esempio: 'Ciao' ---> 'oaiC').
 
+``` 
+bool alfabeto(string s)
+    {
+        char[] caratteri = s.ToCharArray();
+        for (int i = 0; i < Lunghezza(caratteri); i++)
+            if (!((caratteri[i] >= 'a') && (caratteri[i] <= 'z') ||
+               (caratteri[i] >= 'A') && (caratteri[i] <= 'Z')))
+            {
+                return false;
+            }
 
+       return true;
+      
+    }
+``` 
+> Questo metodo è utilizzato per controllare se la stringa è formata **SOLO** da caratteri **alfabetici** (Esempio: 'ciaoo' = True ---> 'ciao12' = False).
+
+``` 
+bool alfanumerici(string s)
+    {
+        char[] caratteri = s.ToCharArray();
+        for (int i = 0; i < Lunghezza(caratteri); i++)
+            if (!((caratteri[i] >= 'a') && (caratteri[i] <= 'z') ||
+               (caratteri[i] >= 'A') && (caratteri[i] <= 'Z') ||
+               (caratteri[i] >= '0') && (caratteri[i] <= '9')))
+            {
+                return false;
+            }
+        return true;
+    }
+``` 
+> Questo metodo è utilizzato per controllare se la stringa è formata da caratteri **alfanumerici** (Esempio: 'ciao233' = True ---> 'ciao244!' = False).
+
+``` 
+bool punte(string s)
+    {
+        char[] caratteri = s.ToCharArray();
+        for (int i = 0; i < Lunghezza(caratteri); i++)
+            if (!((caratteri[i] >= 'a') && (caratteri[i] <= 'z') ||
+               (caratteri[i] >= 'A') && (caratteri[i] <= 'Z') ||
+               (caratteri[i] >= '0') && (caratteri[i] <= '9')))
+            {
+                return true;
+            }
+        return false;
+    }
+``` 
+> Questo metodo è utilizzato per sostituire il "**Char.IsPunctuation()**", utilizzato per controllare se nella stringa è presente un segno di punteggiatura.
 
     
 
