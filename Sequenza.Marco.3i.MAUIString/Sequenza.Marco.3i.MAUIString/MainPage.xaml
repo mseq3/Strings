@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sequenza.Marco._3i.MAUIString.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            
+
+            <Label
+                TextColor="BlueViolet"
+                Text="Benvenuto nel Converti-stringhe!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                TextColor="BlueViolet"
+                Text="Inserisci una stringa..."
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+
+            <Editor 
+                x:Name="edtTesto"
+                Text=""
+                HeightRequest="150"
+                FontSize="40"
+                
+            />
+            
+            <Label
+                x:Name="txtMaiuscola" Text="Parole scritte in maiuscolo" />
+            <Label
+                x:Name="txtMinuscola" Text="Parole scritte in minuscolo" />
+
+            <Label x:Name="txtCapitalizzata" Text="La prima lettera di ogni parola è scritta in maiuscolo" />
+
+            <Label 
+                x:Name="txtPalindroma" Text="Parola palindroma" />
+            
+            <Label
+                x:Name="txtreverse" Text="Parola scritta al contrario" />
+
+            <Label 
+                x:Name="txtparole" Text="Conta le parole" />
+            <Label
+                x:Name="txtlettere" Text="Conta le lettere" />
+            <Label
+                x:Name="txtalfabeto" Text="Controlla se ci sono caratteri alfabetici" />
+            <Label
+                x:Name="txtalfanumerici" Text="Controlla se ci sono caratteri alfanumerici" />
+            
+
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
